@@ -23,7 +23,7 @@ frappe.ui.form.on("Employee", "date_of_birthday", function(frm) {
 frappe.ui.form.on("Employee", 
   'validate', function(frm){
     if(frm.doc.age>=60&& frm.doc.status=='Active'){
-        frappe.throw('you canot save it');
+        frappe.throw('Your age must less than 60 and the status mustnot Active');
     }
   
 });
@@ -42,11 +42,9 @@ frappe.ui.form.on("Employee", {validate:function(frm) {
         if(d.schooluniversity){
             total_education+=1;}
     });
-    
     if (total_education<2){
         frappe.throw('Education must at least 2');
     }
-    
     }});
 
 

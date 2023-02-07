@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:user",
  "creation": "2023-01-14 17:39:02.385217",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -10,6 +11,7 @@
   "middle_name",
   "last_name",
   "full_name",
+  "user",
   "image",
   "status",
   "employee_number",
@@ -83,11 +85,18 @@
    "fieldtype": "Table",
    "label": "Employee Education",
    "options": "Employee Education"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-26 20:03:13.771343",
+ "modified": "2023-02-06 02:35:40.901381",
  "modified_by": "Administrator",
  "module": "Human Resources",
  "name": "Employee",
